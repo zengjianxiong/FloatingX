@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.petterp.floatingx">
     <application>
-        <provider
-            android:name=".impl.lifecycle.FxLifecycleProvider"
-            android:authorities="${applicationId}.fx.provider"
-            android:exported="false" />
+<!--        <provider-->
+<!--            android:name=".impl.lifecycle.FxLifecycleProvider"-->
+<!--            android:authorities="${applicationId}.fx.provider"-->
+<!--            android:exported="false" />-->
     </application>
 </manifest>

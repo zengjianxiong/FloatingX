@@ -77,7 +77,7 @@ public class CustomJavaApplication extends Application {
                 // 启用悬浮窗,相当于一个标记,会自动插入允许的activity中
                 .enableFx()
                 .build();
-        FloatingX.install(helper);
+        FloatingX.install(helper, this);
     }
 
     /**

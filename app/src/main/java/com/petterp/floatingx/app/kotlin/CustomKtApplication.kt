@@ -45,7 +45,7 @@ class CustomKtApplication : Application() {
     companion object {
 
         fun installTag1(context: Application) {
-            FloatingX.install {
+            FloatingX.install({
                 setLayout(R.layout.item_floating)
                 // 传递自定义的View
 //            setLayoutView(
@@ -132,11 +132,11 @@ class CustomKtApplication : Application() {
                 // 只有调用了enableFx,默认才会启用fx,否则fx不会自动插入activity
                 // ps: 这里的只有调用了enableFx仅仅只是配置工具层的标记,后续使用control.show()也会默认启用
                 enableFx()
-            }
+            }, context)
         }
 
         fun installTag2(context: Application) {
-            FloatingX.install {
+            FloatingX.install({
                 setLayoutView(
                     CardView(context).apply {
                         setCardBackgroundColor(Color.GRAY)
@@ -158,7 +158,7 @@ class CustomKtApplication : Application() {
                 setTag(MultipleFxActivity.TAG_2)
                 setEnableLog(true)
                 enableFx()
-            }
+            }, context)
         }
     }
 }
